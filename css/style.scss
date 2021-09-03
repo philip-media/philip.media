@@ -1,0 +1,146 @@
+:root {
+    --logo-color: #000;
+    --bg-color: #2d3436;
+    --bg-color-gradient: radial-gradient(circle, #dfe6e9 0%, #b2bec3 100%);
+    --link-color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --logo-color: #fff;
+        --bg-color: #2d3436;
+        --bg-color-gradient: radial-gradient(circle, #2d3436 0%, #202526 100%);
+        --link-color: #fff;
+    }
+}
+
+/* alata-regular - latin */
+@font-face {
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/alata-v2-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('fonts/alata-v2-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('fonts/alata-v2-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('fonts/alata-v2-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('fonts/alata-v2-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('fonts/alata-v2-latin-regular.svg#Alata') format('svg');
+    /* Legacy iOS */
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1rem;
+    font-family: 'Alata';
+    color: var(--logo-color);
+    margin: 0;
+    background: var(--bg-color);
+    background: var(--bg-color-gradient);
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 1.5rem;
+}
+
+p,
+b,
+ul,
+li {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    width: auto;
+}
+
+.flex-item {
+    padding: 5px;
+    margin: 10px;
+    line-height: 20px;
+    width: 300px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+path {
+    fill: var(--logo-color);
+}
+
+.period {
+    animation: colorchange1 10s linear infinite;
+}
+
+.period2 {
+    animation: colorchange2 10s linear infinite;
+}
+
+@keyframes "colorchange1" {
+    0% {
+        fill: #1abc9c;
+    }
+
+    50% {
+        fill: #9b59b6;
+    }
+
+    100% {
+        fill: #1abc9c;
+    }
+}
+
+@keyframes "colorchange2" {
+    0% {
+        fill: #9b59b6;
+    }
+
+    50% {
+        fill: #1abc9c;
+    }
+
+    100% {
+        fill: #9b59b6;
+    }
+}
+
+a {
+    text-decoration: underline;
+    color: var(--link-color);
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 1.2rem;
+    color: var(--link-color);
+}
