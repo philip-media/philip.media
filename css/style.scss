@@ -3,6 +3,8 @@
     --bg-color: #2d3436;
     --bg-color-gradient: radial-gradient(circle, #dfe6e9 0%, #b2bec3 100%);
     --link-color: #000;
+    --id-color-green: #1abc9c;
+    --id-color-purple: #9b59b6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -107,29 +109,29 @@ path {
 
 @keyframes "colorchange1" {
     0% {
-        fill: #1abc9c;
+        fill: var(--id-color-green);
     }
 
     50% {
-        fill: #9b59b6;
+        fill: var(--id-color-purple);
     }
 
     100% {
-        fill: #1abc9c;
+        fill: var(--id-color-green);
     }
 }
 
 @keyframes "colorchange2" {
     0% {
-        fill: #9b59b6;
+        fill: var(--id-color-purple);
     }
 
     50% {
-        fill: #1abc9c;
+        fill: var(--id-color-green);
     }
 
     100% {
-        fill: #9b59b6;
+        fill: var(--id-color-purple);
     }
 }
 
@@ -138,9 +140,22 @@ a {
     color: var(--link-color);
 }
 
-nav a {
-    text-decoration: none;
-    text-transform: lowercase;
+nav {
     font-size: 1.2rem;
-    color: var(--link-color);
+
+    a {
+        text-decoration: none;
+        text-transform: lowercase;
+        font-size: 1.2rem;
+        color: var(--link-color);
+        transition: 0.5s ease;
+    }
+
+    a:hover {
+        color: var(--id-color-green);
+    }
+
+    a:first-child:hover {
+        color: var(--id-color-purple)
+    }
 }
