@@ -56,14 +56,16 @@ h1,
 h2,
 h3 {
     font-size: 1.5rem;
+    line-height: 1.5rem;
 }
 
 p,
 b,
 ul,
 li {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     font-weight: 400;
+    line-height: 1.5rem;
 }
 
 .flex-container {
@@ -81,6 +83,7 @@ li {
 
 .row {
     width: auto;
+    max-width: 80%;
 }
 
 .flex-item {
@@ -95,9 +98,12 @@ li {
     text-align: center;
 }
 
-
 path {
     fill: var(--logo-color);
+}
+ 
+.smalllogo {
+    width: 10rem;
 }
 
 .period {
@@ -153,10 +159,31 @@ nav {
     }
 
     a:hover {
-        color: var(--id-color-green);
+        color: var(--id-color-green)
     }
 
-    a:first-child:hover {
+    a:nth-child(2):hover {
         color: var(--id-color-purple)
     }
+
+    a.active {
+        color: var(--id-color-green)
+    }
+}
+
+.domains {
+    display: flex;
+
+    .flexbox {
+        flex: 1;
+        margin: .5rem;
+    }
+}
+ul {
+    padding-left: 0rem;
+}
+
+li {
+    list-style: none;
+    line-height: 1.5rem;
 }
