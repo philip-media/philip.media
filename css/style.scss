@@ -33,7 +33,67 @@
         url('fonts/alata-v2-latin-regular.ttf') format('truetype'),
         /* Safari, Android, iOS */
         url('fonts/alata-v2-latin-regular.svg#Alata') format('svg');
-        /* Legacy iOS */
+    /* Legacy iOS */
+}
+
+/* dm-sans-regular - latin */
+@font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/dm-sans-v6-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('fonts/dm-sans-v6-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('fonts/dm-sans-v6-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('fonts/dm-sans-v6-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('fonts/dm-sans-v6-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('fonts/dm-sans-v6-latin-regular.svg#DMSans') format('svg');
+    /* Legacy iOS */
+}
+
+/* dm-sans-500 - latin */
+@font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('fonts/dm-sans-v6-latin-500.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('fonts/dm-sans-v6-latin-500.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('fonts/dm-sans-v6-latin-500.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('fonts/dm-sans-v6-latin-500.woff') format('woff'),
+        /* Modern Browsers */
+        url('fonts/dm-sans-v6-latin-500.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('fonts/dm-sans-v6-latin-500.svg#DMSans') format('svg');
+    /* Legacy iOS */
+}
+
+/* dm-sans-700 - latin */
+@font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/dm-sans-v6-latin-700.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('fonts/dm-sans-v6-latin-700.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('fonts/dm-sans-v6-latin-700.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('fonts/dm-sans-v6-latin-700.woff') format('woff'),
+        /* Modern Browsers */
+        url('fonts/dm-sans-v6-latin-700.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('fonts/dm-sans-v6-latin-700.svg#DMSans') format('svg');
+    /* Legacy iOS */
 }
 
 html,
@@ -44,7 +104,8 @@ body {
 body {
     font-size: 16px;
     line-height: 1rem;
-    font-family: 'Alata';
+    font-family: 'DM Sans';
+    font-weight: 400;
     color: var(--logo-color);
     margin: 0;
     background: var(--bg-color);
@@ -101,7 +162,7 @@ li {
 path {
     fill: var(--logo-color);
 }
- 
+
 .smalllogo {
     width: 10rem;
 }
@@ -143,8 +204,15 @@ path {
 }
 
 a {
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--link-color);
+    font-weight: 700;
+    transition: 0.5s ease;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--id-color-green);
 }
 
 nav {
@@ -159,7 +227,8 @@ nav {
     }
 
     a:hover {
-        color: var(--id-color-green)
+        color: var(--id-color-green);
+        text-decoration: none;
     }
 
     a:nth-child(2):hover {
@@ -179,6 +248,7 @@ nav {
         margin: .5rem;
     }
 }
+
 ul {
     padding-left: 0rem;
 }
@@ -186,4 +256,5 @@ ul {
 li {
     list-style: none;
     line-height: 1.5rem;
+    font-weight: 500;
 }
