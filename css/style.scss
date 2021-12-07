@@ -231,7 +231,7 @@ nav {
         text-decoration: none;
     }
 
-    a:nth-child(2):hover {
+    a:nth-child(2):hover, a:nth-child(4):hover {
         color: var(--id-color-purple)
     }
 
