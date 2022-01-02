@@ -11,7 +11,7 @@
     :root {
         --logo-color: #fff;
         --bg-color: #2d3436;
-        --bg-color-gradient: radial-gradient(circle, #2d3436 0%, #202526 100%);
+        --bg-color-gradient: radial-gradient(circle, #193131 0%, #1D1D1B 100%);
         --link-color: #fff;
     }
 }
@@ -99,6 +99,7 @@
 html,
 body {
     height: 100%;
+    color: var(--logo-color);
 }
 
 body {
@@ -153,7 +154,7 @@ li {
     line-height: 20px;
     width: 300px;
     max-width: 100%;
-    color: white;
+    color: var(--logo-color);
     font-weight: bold;
     font-size: 2em;
     text-align: center;
