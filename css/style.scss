@@ -99,7 +99,7 @@
 html,
 body {
     height: 100%;
-    color: var(--logo-color);
+    color: #fff;
 }
 
 body {
@@ -109,8 +109,7 @@ body {
     font-weight: 400;
     color: var(--logo-color);
     margin: 0;
-    background: var(--bg-color);
-    background: var(--bg-color-gradient);
+    background: #fff;
     text-align: center;
 }
 
@@ -131,7 +130,7 @@ li {
 }
 
 .flex-container {
-    height: 100%;
+    height: 90%;
     padding: 0;
     margin: 0;
     display: -webkit-box;
@@ -160,8 +159,35 @@ li {
     text-align: center;
 }
 
+footer {
+    color: #d7dbde;
+    font-size: .9rem;
+    width: 20rem;
+    position: absolute;
+    left:50%;
+    bottom: 1rem;
+    margin-left:-10rem;
+
+    a {
+        color: #d7dbde;
+    }
+
+     a:hover {
+        color: var(--id-color-green);
+        text-decoration: none;
+    }
+
+    a:nth-child(2):hover, a:nth-child(4):hover {
+        color: var(--id-color-purple)
+    }
+
+    a.active {
+        color: var(--id-color-green)
+    }
+}
+
 path {
-    fill: var(--logo-color);
+    fill: #663399;
 }
 
 .smalllogo {
@@ -169,11 +195,11 @@ path {
 }
 
 .period {
-    animation: colorchange1 10s linear infinite;
+    animation: colorchange1 5s linear infinite;
 }
 
 .period2 {
-    animation: colorchange2 10s linear infinite;
+    animation: colorchange2 5s linear infinite;
 }
 
 @keyframes "colorchange1" {
